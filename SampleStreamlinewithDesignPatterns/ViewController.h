@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "PollingController.h"
+@class Polling;
+/**
+ * @brief ViewController（メイン画面）
+ */
+@interface ViewController : UIViewController <UIAlertViewDelegate, PollingControllerDelegate>
+@property (nonatomic, readwrite)int count;
+@property (nonatomic, retain)Polling *polling;
+@property (nonatomic, readwrite)BOOL isStart;
 @end

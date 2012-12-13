@@ -23,6 +23,10 @@
 		A40FEB69167934A6004A177C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A40FEB44167934A5004A177C /* Foundation.framework */; };
 		A40FEB71167934A6004A177C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A40FEB6F167934A6004A177C /* InfoPlist.strings */; };
 		A40FEB74167934A6004A177C /* SampleStreamlinewithDesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FEB73167934A6004A177C /* SampleStreamlinewithDesignPatternsTests.m */; };
+		A40FEB9C1679BDFB004A177C /* Polling.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FEB991679BDFB004A177C /* Polling.m */; };
+		A40FEB9D1679BDFB004A177C /* Polling.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FEB991679BDFB004A177C /* Polling.m */; };
+		A40FEB9E1679BDFB004A177C /* PollingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FEB9B1679BDFB004A177C /* PollingController.m */; };
+		A40FEB9F1679BDFB004A177C /* PollingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A40FEB9B1679BDFB004A177C /* PollingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,10 @@
 		A40FEB70167934A6004A177C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A40FEB72167934A6004A177C /* SampleStreamlinewithDesignPatternsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleStreamlinewithDesignPatternsTests.h; sourceTree = "<group>"; };
 		A40FEB73167934A6004A177C /* SampleStreamlinewithDesignPatternsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleStreamlinewithDesignPatternsTests.m; sourceTree = "<group>"; };
+		A40FEB981679BDFB004A177C /* Polling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Polling.h; sourceTree = "<group>"; };
+		A40FEB991679BDFB004A177C /* Polling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Polling.m; sourceTree = "<group>"; };
+		A40FEB9A1679BDFB004A177C /* PollingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PollingController.h; sourceTree = "<group>"; };
+		A40FEB9B1679BDFB004A177C /* PollingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PollingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +127,8 @@
 			children = (
 				A40FEB51167934A5004A177C /* AppDelegate.h */,
 				A40FEB52167934A5004A177C /* AppDelegate.m */,
-				A40FEB5A167934A5004A177C /* ViewController.h */,
-				A40FEB5B167934A5004A177C /* ViewController.m */,
-				A40FEB5D167934A6004A177C /* ViewController.xib */,
+				A40FEBA21679BE18004A177C /* ViewControllers */,
+				A40FEBA11679BE00004A177C /* Controller */,
 				A40FEB49167934A5004A177C /* Supporting Files */,
 			);
 			path = SampleStreamlinewithDesignPatterns;
@@ -158,6 +165,27 @@
 				A40FEB6F167934A6004A177C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A40FEBA11679BE00004A177C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A40FEB981679BDFB004A177C /* Polling.h */,
+				A40FEB991679BDFB004A177C /* Polling.m */,
+				A40FEB9A1679BDFB004A177C /* PollingController.h */,
+				A40FEB9B1679BDFB004A177C /* PollingController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A40FEBA21679BE18004A177C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A40FEB5A167934A5004A177C /* ViewController.h */,
+				A40FEB5B167934A5004A177C /* ViewController.m */,
+				A40FEB5D167934A6004A177C /* ViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +301,8 @@
 				A40FEB4F167934A5004A177C /* main.m in Sources */,
 				A40FEB53167934A5004A177C /* AppDelegate.m in Sources */,
 				A40FEB5C167934A5004A177C /* ViewController.m in Sources */,
+				A40FEB9C1679BDFB004A177C /* Polling.m in Sources */,
+				A40FEB9E1679BDFB004A177C /* PollingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +311,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A40FEB74167934A6004A177C /* SampleStreamlinewithDesignPatternsTests.m in Sources */,
+				A40FEB9D1679BDFB004A177C /* Polling.m in Sources */,
+				A40FEB9F1679BDFB004A177C /* PollingController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +477,7 @@
 				A40FEB79167934A6004A177C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A40FEB7A167934A6004A177C /* Build configuration list for PBXNativeTarget "SampleStreamlinewithDesignPatternsTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +486,7 @@
 				A40FEB7C167934A6004A177C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
