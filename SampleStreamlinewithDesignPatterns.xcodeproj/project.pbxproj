@@ -128,7 +128,7 @@
 				A40FEB51167934A5004A177C /* AppDelegate.h */,
 				A40FEB52167934A5004A177C /* AppDelegate.m */,
 				A40FEBA21679BE18004A177C /* ViewControllers */,
-				A40FEBA11679BE00004A177C /* Controller */,
+				A40FEBA11679BE00004A177C /* Model */,
 				A40FEB49167934A5004A177C /* Supporting Files */,
 			);
 			path = SampleStreamlinewithDesignPatterns;
@@ -167,7 +167,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A40FEBA11679BE00004A177C /* Controller */ = {
+		A40FEBA11679BE00004A177C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				A40FEB981679BDFB004A177C /* Polling.h */,
@@ -175,7 +175,7 @@
 				A40FEB9A1679BDFB004A177C /* PollingController.h */,
 				A40FEB9B1679BDFB004A177C /* PollingController.m */,
 			);
-			name = Controller;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		A40FEBA21679BE18004A177C /* ViewControllers */ = {
